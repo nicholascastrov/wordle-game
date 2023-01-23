@@ -16,19 +16,21 @@ let wordBank = [
 // Row 1: Letters
 
 let l1R1 = document.getElementsByClassName("row1-block-1")[0];
-let letter1Row1 = l1R1.innerHTML = "C";
+let letter1Row1 = l1R1.innerHTML = "";
 
 let l2R1 = document.getElementsByClassName("row1-block-2")[0];
-let letter2Row1= l2R1.innerHTML = "R";
+let letter2Row1= l2R1.innerHTML = "";
 
 let l3R1 = document.getElementsByClassName("row1-block-3")[0];
-let letter3Row1= l3R1.innerHTML = "A";
+let letter3Row1= l3R1.innerHTML = "";
 
 let l4R1 = document.getElementsByClassName("row1-block-4")[0];
-let letter4Row1= l4R1.innerHTML = "Z";
+let letter4Row1= l4R1.innerHTML = "";
 
 let l5R1 = document.getElementsByClassName("row1-block-5")[0];
-let letter5Row1= l5R1.innerHTML = "Y";
+let letter5Row1= l5R1.innerHTML = "";
+
+let allLettersRow1 = letter1Row1 + letter2Row1 + letter3Row1 + letter4Row1 + letter5Row1;
 
 
 // Row 2: Letters
@@ -48,6 +50,7 @@ let letter4Row2= l4R2.innerHTML = "Z";
 let l5R2 = document.getElementsByClassName("row2-block-5")[0];
 let letter5Row2= l5R2.innerHTML = "Y";
 
+let allLettersRow2 = letter1Row2 + letter2Row2 + letter3Row2 + letter4Row2 + letter5Row2;
 
 // Row 3: Letters
 
@@ -65,6 +68,8 @@ let letter4Row3= l4R3.innerHTML = "Z";
 
 let l5R3 = document.getElementsByClassName("row3-block-5")[0];
 let letter5Row3= l5R3.innerHTML = "Y";
+
+let allLettersRow3 = letter1Row3 + letter2Row3 + letter3Row3 + letter4Row3 + letter5Row3;
 
 
 // Row 4: Letters
@@ -84,6 +89,7 @@ let letter4Row4= l4R4.innerHTML = "Z";
 let l5R4 = document.getElementsByClassName("row4-block-5")[0];
 let letter5Row4= l5R4.innerHTML = "Y";
 
+let allLettersRow4 = letter1Row4 + letter2Row4 + letter3Row4 + letter4Row4 + letter5Row4;
 
 // Row 5: Letters
 
@@ -102,6 +108,9 @@ let letter4Row5= l4R5.innerHTML = "Z";
 let l5R5 = document.getElementsByClassName("row5-block-5")[0];
 let letter5Row5= l5R5.innerHTML = "Y";
 
+let allLettersRow5 = letter1Row5 + letter2Row5 + letter3Row5 + letter4Row5 + letter5Row5;
+
+
 // Row 6: Letters
 
 let l1R6 = document.getElementsByClassName("row6-block-1")[0];
@@ -119,14 +128,22 @@ let letter4Row6= l4R6.innerHTML = "Z";
 let l5R6 = document.getElementsByClassName("row6-block-5")[0];
 let letter5Row6= l5R6.innerHTML = "Y";
 
+let allLettersRow6 = letter1Row6 + letter2Row6 + letter3Row6 + letter4Row6 + letter5Row6;
 
 
 
+// Types inside grid-blocks //
 
+let show = document.querySelectorAll(".row1-block-1")
+let next = 0;
+document.addEventListener("keydown", function (e) {
 
+    if (next < show.length){
 
+        show[next].innerHTML = e.key.toUpperCase();
 
+        next++;
+    }
 
-
-
+});
 

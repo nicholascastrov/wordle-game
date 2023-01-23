@@ -52,12 +52,14 @@ hr {
     padding: 10px;
 }
 
+
+/* Grid Rows: 1 */
 .grid-row-1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-   
 }
 
+/* Row Blocks: 1 */
 .row1-block-1 {
     display: block;
     border: 2px solid rgba(255, 255, 255, 0.286);
@@ -65,12 +67,65 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+
+}
+.row1-block-2 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row1-block-3 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row1-block-4 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row1-block-5 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
+
+
+
+/* Grid Row: 2 */
 
 .grid-row-2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}
+
+/* Row Block: 2 */
+.row2-block-1 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 .row2-block-2 {
     display: block;
@@ -79,13 +134,64 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+}
+.row2-block-3 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row2-block-4 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row2-block-5 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
+
+
+/* Grid Row: 3 */
 .grid-row-3 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
+
+/* Row Blocks: 3 */
+.row3-block-1 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row3-block-2 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
 .row3-block-3 {
     display: block;
     border: 2px solid rgba(255, 255, 255, 0.286);
@@ -93,13 +199,63 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+}
+.row3-block-4 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row3-block-5 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
+
+
+/* Grid Row: 4 */
 .grid-row-4 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
+/* Row Block: 4 */
+.row4-block-1 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row4-block-2 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row4-block-3 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
 .row4-block-4 {
     display: block;
     border: 2px solid rgba(255, 255, 255, 0.286);
@@ -107,13 +263,65 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+}
+.row4-block-5 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
+
+
+/* Grid Row: 5 */
 .grid-row-5 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
+
+/* Row Blocks: 5 */
+
+.row5-block-1 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row5-block-2 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row5-block-3 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.row5-block-4 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
 .row5-block-5 {
     display: block;
     border: 2px solid rgba(255, 255, 255, 0.286);
@@ -121,21 +329,70 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
+
+
+/* Grid Row: 6 */
 .grid-row-6 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
-.row6-block-6 {
+/* Row Blocks: 6 */
+.row6-block-1 {
     display: block;
     border: 2px solid rgba(255, 255, 255, 0.286);
     margin: 2.5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
+
+.row6-block-2 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.row6-block-3 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.row6-block-4 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.row6-block-5 {
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+/* Keyboard Box */
 
 .keyboard-box {
     display: grid;

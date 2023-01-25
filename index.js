@@ -28,7 +28,7 @@ document.addEventListener("keydown", function (e) {
 
         next1++;
 
-        if (next1 >= 0 && next1 <= 4){
+        if (next1 >= 0 && next1 <= 4){   // First Row
 
             squares[next1].innerHTML = e.key.toUpperCase();   // Writing letter on square
 
@@ -42,21 +42,42 @@ document.addEventListener("keydown", function (e) {
                 if (next1 <= 4 && emptyArray[0].join("") === word1){  //After all letters are checked, join array and check with winning word
 
                     for (let i = 0; i <= next1; i++){
+
                         squares[i].style.background = "green";
+
                     }
-                    alert("yoyo");
+
+                    alert("yo");
                     
                 } 
                 
             } else if (winWord[next1] !== squares[next1].innerHTML) {
-                if (next1 >= 4){
+                
+                if (next1 >= 4 && emptyArray[0].join("") !== word1){
+
                     for (let i = 0; i <= next1; i++){
+
                         squares[i].style.background = "red";
+
                     }
-                    alert("yo");
+
+                    alert("keep trying");
+                
+                }
+            } 
+            if (next1 === 4){
+                for (let i = 0; i < word1.length; i++){
+                    if (word1[i] === squares[i].innerHTML){
+                        
+                        squares[i].style.background = "green";
+
+                    } else {
+
+                        squares[i].style.background = "red";
+
+                    }
                 }
             }
-
         }
         
         if (next1 >= 5 && next1 <= 9){

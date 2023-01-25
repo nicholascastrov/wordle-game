@@ -30,22 +30,31 @@ document.addEventListener("keydown", function (e) {
 
         if (next1 >= 0 && next1 <= 4){
 
-            squares[next1].innerHTML = e.key.toUpperCase();
+            squares[next1].innerHTML = e.key.toUpperCase();   // Writing letter on square
 
-            emptyArray[0].push(squares[next1].innerHTML);
+            emptyArray[0].push(squares[next1].innerHTML);     // Pushing separate letters into array
             
-            let winWord = word1.split("");
-    
-            if (winWord[next1] === squares[next1].innerHTML){
+            let winWord = word1.split("");                    // Splitting word that is going to be checked against array
 
-                squares[next1].style.background = "green";
+            if (winWord[next1] === squares[next1].innerHTML){       // Checking letter by letter if they match
+                    
+                
+                if (next1 <= 4 && emptyArray[0].join("") === word1){  //After all letters are checked, join array and check with winning word
 
-                if (next1 <= 4 && emptyArray[0].join("") === word1){
-                    alert("yoyo")
+                    for (let i = 0; i <= next1; i++){
+                        squares[i].style.background = "green";
+                    }
+                    alert("yoyo");
+                    
+                } 
+                
+            } else if (winWord[next1] !== squares[next1].innerHTML) {
+                if (next1 >= 4){
+                    for (let i = 0; i <= next1; i++){
+                        squares[i].style.background = "red";
+                    }
+                    alert("yo");
                 }
-
-            } else {
-                squares[next1].style.background = "red";
             }
 
         }
@@ -56,12 +65,12 @@ document.addEventListener("keydown", function (e) {
 
             emptyArray[1].push(squares[next1].innerHTML);
             
-            let winWord2 = word2.split("");
+            let winWord2 = word1.split("");
     
             if (winWord2[next2] === squares[next1].innerHTML){
                 squares[next1].style.background = "green";
 
-                if (next2 <= 4 && emptyArray[1].join("") === word2){ 
+                if (next2 <= 4 && emptyArray[1].join("") === word1){ 
                     alert("yoyo")
                 }
 
@@ -80,12 +89,12 @@ document.addEventListener("keydown", function (e) {
 
             emptyArray[2].push(squares[next1].innerHTML);
             
-            let winWord3 = word3.split("");
+            let winWord3 = word1.split("");
     
             if (winWord3[next3] === squares[next1].innerHTML){
                 squares[next1].style.background = "green";
 
-                if (next3 <= 4 && emptyArray[2].join("") === word3){ 
+                if (next3 <= 4 && emptyArray[2].join("") === word1){ 
                     alert("yoyo")
                 }
 
@@ -104,12 +113,12 @@ document.addEventListener("keydown", function (e) {
 
             emptyArray[3].push(squares[next1].innerHTML);
             
-            let winWord4 = word4.split("");
+            let winWord4 = word1.split("");
     
             if (winWord4[next4] === squares[next1].innerHTML){
                 squares[next1].style.background = "green";
 
-                if (next4 <= 4 && emptyArray[3].join("") === word4){ 
+                if (next4 <= 4 && emptyArray[3].join("") === word1){ 
                     alert("yoyo")
                 }
 
@@ -128,12 +137,12 @@ document.addEventListener("keydown", function (e) {
 
             emptyArray[4].push(squares[next1].innerHTML);
             
-            let winWord5 = word5.split("");
+            let winWord5 = word1.split("");
     
             if (winWord5[next5] === squares[next1].innerHTML){
                 squares[next1].style.background = "green";
 
-                if (next5 <= 4 && emptyArray[4].join("") === word5){ 
+                if (next5 <= 4 && emptyArray[4].join("") === word1){ 
                     alert("yoyo")
                 }
 
@@ -152,12 +161,12 @@ document.addEventListener("keydown", function (e) {
 
             emptyArray[5].push(squares[next1].innerHTML);
             
-            let winWord6 = word6.split("");
+            let winWord6 = word1.split("");
     
             if (winWord6[next6] === squares[next1].innerHTML){
                 squares[next1].style.background = "green";
 
-                if (next6 <= 4 && emptyArray[5].join("") === word6){ 
+                if (next6 <= 4 && emptyArray[5].join("") === word1){ 
                     alert("yoyo")
                 }
 

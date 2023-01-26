@@ -90,7 +90,7 @@ document.addEventListener("keydown", function (e) {
         if (word1[i] === squares[i].innerHTML) {
           squares[i].style.background = "green";
         } else if (word1.includes(squares[i].innerHTML)) {
-            squares[i].style.background = "yellow";
+            squares[i].style.background = "#e0c40a";
         } else if (!(word1[i] === squares[i].innerHTML)){
             squares[i].style.background = "red";
         } 
@@ -151,7 +151,7 @@ document.addEventListener("keydown", function (e) {
           squares[i].style.background = "green";
           //   console.log(j);
         } else if (word2.includes(squares[i].innerHTML)){
-            squares[i].style.background = "yellow";
+            squares[i].style.background = "#e0c40a";
         } else {
           squares[i].style.background = "red";
         }
@@ -215,7 +215,7 @@ document.addEventListener("keydown", function (e) {
 
         //   console.log(j);
         } else if (word3.includes(squares[i].innerHTML)){
-            squares[i].style.background = "yellow";
+            squares[i].style.background = "#e0c40a";
         } else {
           squares[i].style.background = "red";
         }
@@ -272,7 +272,7 @@ document.addEventListener("keydown", function (e) {
 
         //   console.log(j);
         } else if (word4.includes(squares[i].innerHTML)){
-            squares[i].style.background = "yellow";
+            squares[i].style.background = "#e0c40a";
         } else {
           squares[i].style.background = "red";
         }
@@ -330,7 +330,7 @@ document.addEventListener("keydown", function (e) {
 
         //   console.log(j);
         } else if (word5.includes(squares[i].innerHTML)){
-            squares[i].style.background = "yellow";
+            squares[i].style.background = "#e0c40a";
         } else {
           squares[i].style.background = "red";
         }
@@ -387,7 +387,7 @@ document.addEventListener("keydown", function (e) {
           squares[i].style.background = "green";
 
         } else if (word6.includes(squares[i].innerHTML)){
-            squares[i].style.background = "yellow";
+            squares[i].style.background = "#e0c40a";
         } else {
           squares[i].style.background = "red";
         }

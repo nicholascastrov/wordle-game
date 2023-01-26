@@ -41,9 +41,9 @@ let word4 = "PIXEL";
 let word5 = "STYLE";
 let word6 = "ASYNC";
 
-const obj = [];
+
 let emptyArray = [[], [], [], [], [], []];
-console.log(emptyArray);
+// console.log(emptyArray);
 document.addEventListener("keydown", function (e) {
 
   if (e.key === "Backspace") {
@@ -51,15 +51,15 @@ document.addEventListener("keydown", function (e) {
     squares[next1].style.background = "none";
     next1--;
     emptyArray[0].pop();
-    console.log(emptyArray);
+    // console.log(emptyArray);
   } else {
     next1++;
 
     if (next1 >= 0 && next1 <= 4) {
       squares[next1].innerHTML = e.key.toUpperCase(); // Writing letter on square
-      console.log(emptyArray);
+    //   console.log(emptyArray);
       emptyArray[0].push(squares[next1].innerHTML); // Pushing separate letters into array
-      console.log(emptyArray[0].length);
+    //   console.log(emptyArray[0].length);
       let winWord = word1.split(""); // Splitting word that is going to be checked against array
 
       if (winWord[next1] === squares[next1].innerHTML) {
@@ -89,6 +89,8 @@ document.addEventListener("keydown", function (e) {
       for (let i = 0; i < word1.length; i++) {
         if (word1[i] === squares[i].innerHTML) {
           squares[i].style.background = "green";
+        } else if (word1.includes(squares[i].innerHTML)) {
+            squares[i].style.background = "yellow";
         } else if (!(word1[i] === squares[i].innerHTML)){
             squares[i].style.background = "red";
         } 
@@ -100,7 +102,7 @@ document.addEventListener("keydown", function (e) {
     if (next1 >= 5 && next1 <= 9) {
       next2++;
       squares[next1].innerHTML = e.key.toUpperCase(); // Writing letter on square
-      //   console.log(emptyArray);
+        // console.log(emptyArray);
       emptyArray[1].push(squares[next1].innerHTML); // Pushing separate letters into array
       //   console.log(next1);
       let winWord = word2.split(""); // Splitting word that is going to be checked against array
@@ -148,6 +150,8 @@ document.addEventListener("keydown", function (e) {
         if (word2[j] === squares[i].innerHTML) {
           squares[i].style.background = "green";
           //   console.log(j);
+        } else if (word2.includes(squares[i].innerHTML)){
+            squares[i].style.background = "yellow";
         } else {
           squares[i].style.background = "red";
         }
@@ -158,34 +162,34 @@ document.addEventListener("keydown", function (e) {
     if (next1 >= 10 && next1 <= 14) {
       next3++;
       squares[next1].innerHTML = e.key.toUpperCase(); // Writing letter on square
-      console.log(emptyArray);
+    //   console.log(emptyArray);
       emptyArray[2].push(squares[next1].innerHTML); // Pushing separate letters into array
-      console.log(next1);
+    //   console.log(next1);
       let winWord = word3.split(""); // Splitting word that is going to be checked against array
-      console.log(emptyArray[1].length);
+    //   console.log(emptyArray[1].length);
 
       if (winWord[next3] === squares[next1].innerHTML) {
         // Checking letter by letter if they match
-        console.log(next2);
+        // console.log(next2);
         if (next1 <= 14 && emptyArray[2].join("") === word3) {
           //After all letters are checked, join array and check with winning word
 
           for (let i = 10; i <= 14; i++) {
-            console.log(next1[i]);
+            // console.log(next1[i]);
             squares[i].style.background = "green";
           }
           alert("You won!");
         }
       } else if (winWord[next3] !== squares[next3].innerHTML) {
-        console.log(winWord[next2], "hey");
-        console.log(squares[next1].innerHTML, "hey2");
-        console.log(winWord[1]);
-        console.log(next1);
-        console.log(next2);
+        // console.log(winWord[next2], "hey");
+        // console.log(squares[next1].innerHTML, "hey2");
+        // console.log(winWord[1]);
+        // console.log(next1);
+        // console.log(next2);
         if (next1 >= 14) {
           for (let i = 10; i <= 14; i++) {
             squares[i].style.background = "red";
-            console.log(squares[i]);
+            // console.log(squares[i]);
           }
           alert("Try again!");
         }
@@ -194,22 +198,24 @@ document.addEventListener("keydown", function (e) {
     if (next1 === 14) {
       console.log(next1);
       let j = 0;
-      console.log(next1, "imhere");
-      console.log(next2);
+    //   console.log(next1, "imhere");
+    //   console.log(next2);
       // we need to track 5-9 on our squares rather than 0-4
       for (let i = 10; i < 15; i++) {
-        console.log("hey");
-        console.log(j);
+        // console.log("hey");
+        // console.log(j);
         // we need word2 to be 0-4
         // squres to be 5-9
         // cant use i cause it goes to 5,next2 is 4
-        console.log(word3[j]);
-        console.log(squares[i].innerHTML);
+        // console.log(word3[j]);
+        // console.log(squares[i].innerHTML);
 
         if (word3[j] === squares[i].innerHTML) {
           squares[i].style.background = "green";
 
-          console.log(j);
+        //   console.log(j);
+        } else if (word3.includes(squares[i].innerHTML)){
+            squares[i].style.background = "yellow";
         } else {
           squares[i].style.background = "red";
         }
@@ -228,43 +234,45 @@ document.addEventListener("keydown", function (e) {
       if (winWord4[next4] === squares[next1].innerHTML) {
         if (next4 <= 19 && emptyArray[3].join("") === word4) {
           for (let i = 15; i <= 19; i++) {
-            console.log(next1[i]);
+            // console.log(next1[i]);
             squares[i].style.background = "green";
           }
           alert("You Won");
         }
       } else if (winWord4[next4] !== squares[next4].innerHTML) {
-        console.log(squares[next1].innerHTML, "hey2");
-        console.log(next1);
-        console.log(next2);
+        // console.log(squares[next1].innerHTML, "hey2");
+        // console.log(next1);
+        // console.log(next2);
         if (next1 >= 19) {
           for (let i = 15; i <= 19; i++) {
             squares[i].style.background = "red";
-            console.log(squares[i]);
+            // console.log(squares[i]);
           }
           alert("Try again!");
         }
       }
     }
     if (next1 === 19) {
-      console.log(next1);
+    //   console.log(next1);
       let j = 0;
-      console.log(next1, "imhere");
-      console.log(next2);
+    //   console.log(next1, "imhere");
+    //   console.log(next2);
       // we need to track 5-9 on our squares rather than 0-4
       for (let i = 15; i < 20; i++) {
-        console.log("hey");
-        console.log(j);
+        // console.log("hey");
+        // console.log(j);
         // we need word2 to be 0-4
         // squres to be 5-9
         // cant use i cause it goes to 5,next2 is 4
-        console.log(word3[j]);
-        console.log(squares[i].innerHTML);
+        // console.log(word3[j]);
+        // console.log(squares[i].innerHTML);
 
         if (word4[j] === squares[i].innerHTML) {
           squares[i].style.background = "green";
 
-          console.log(j);
+        //   console.log(j);
+        } else if (word4.includes(squares[i].innerHTML)){
+            squares[i].style.background = "yellow";
         } else {
           squares[i].style.background = "red";
         }
@@ -284,43 +292,45 @@ document.addEventListener("keydown", function (e) {
       if (winWord5[next5] === squares[next1].innerHTML) {
         if (next5 <= 24 && emptyArray[4].join("") === word5) {
           for (let i = 20; i <= 24; i++) {
-            console.log(next1[i]);
+            // console.log(next1[i]);
             squares[i].style.background = "green";
           }
           alert("You won!");
         }
       } else if (winWord5[next5] !== squares[next5].innerHTML) {
-        console.log(squares[next1].innerHTML, "hey2");
-        console.log(next1);
-        console.log(next2);
+        // console.log(squares[next1].innerHTML, "hey2");
+        // console.log(next1);
+        // console.log(next2);
         if (next1 >= 24) {
           for (let i = 20; i <= 24; i++) {
             squares[i].style.background = "red";
-            console.log(squares[i]);
+            // console.log(squares[i]);
           }
           alert("Try again");
         }
       }
     }
     if (next1 === 24) {
-      console.log(next1);
+    //   console.log(next1);
       let j = 0;
-      console.log(next1, "imhere");
-      console.log(next2);
+    //   console.log(next1, "imhere");
+    //   console.log(next2);
       // we need to track 5-9 on our squares rather than 0-4
       for (let i = 20; i < 25; i++) {
-        console.log("hey");
-        console.log(j);
+        // console.log("hey");
+        // console.log(j);
         // we need word2 to be 0-4
         // squres to be 5-9
         // cant use i cause it goes to 5,next2 is 4
-        console.log(word3[j]);
-        console.log(squares[i].innerHTML);
+        // console.log(word3[j]);
+        // console.log(squares[i].innerHTML);
 
         if (word5[j] === squares[i].innerHTML) {
           squares[i].style.background = "green";
 
-          console.log(j);
+        //   console.log(j);
+        } else if (word5.includes(squares[i].innerHTML)){
+            squares[i].style.background = "yellow";
         } else {
           squares[i].style.background = "red";
         }
@@ -340,19 +350,19 @@ document.addEventListener("keydown", function (e) {
       if (winWord6[next6] === squares[next1].innerHTML) {
         if (next5 <= 24 && emptyArray[5].join("") === word6) {
           for (let i = 25; i <= 29; i++) {
-            console.log(next1[i]);
+            // console.log(next1[i]);
             squares[i].style.background = "green";
           }
           alert("You won!");
         }
       } else if (winWord6[next6] !== squares[next6].innerHTML) {
-        console.log(squares[next1].innerHTML, "hey2");
-        console.log(next1);
-        console.log(next2);
+        // console.log(squares[next1].innerHTML, "hey2");
+        // console.log(next1);
+        // console.log(next2);
         if (next1 >= 29) {
           for (let i = 25; i <= 29; i++) {
             squares[i].style.background = "red";
-            console.log(squares[i]);
+            // console.log(squares[i]);
           }
           alert("Try again tommorow!");
         }
@@ -361,22 +371,23 @@ document.addEventListener("keydown", function (e) {
     if (next1 === 29) {
       console.log(next1);
       let j = 0;
-      console.log(next1, "imhere");
-      console.log(next2);
+    //   console.log(next1, "imhere");
+    //   console.log(next2);
       // we need to track 5-9 on our squares rather than 0-4
       for (let i = 25; i < 30; i++) {
-        console.log("hey");
-        console.log(j);
+        // console.log("hey");
+        // console.log(j);
         // we need word2 to be 0-4
         // squres to be 5-9
         // cant use i cause it goes to 5,next2 is 4
-        console.log(word3[j]);
-        console.log(squares[i].innerHTML);
+        // console.log(word3[j]);
+        // console.log(squares[i].innerHTML);
 
         if (word6[j] === squares[i].innerHTML) {
           squares[i].style.background = "green";
 
-          console.log(j);
+        } else if (word6.includes(squares[i].innerHTML)){
+            squares[i].style.background = "yellow";
         } else {
           squares[i].style.background = "red";
         }

@@ -34,12 +34,12 @@ let next4 = -1;
 let next5 = -1;
 let next6 = -1;
 
-let word1 = "ARRAY";
-let word2 = "ARRAY";
-let word3 = "ARRAY";
-let word4 = "ARRAY";
-let word5 = "ARRAY";
-let word6 = "ARRAY";
+let word1 = "ASYNC";
+let word2 = "ASYNC";
+let word3 = "ASYNC";
+let word4 = "ASYNC";
+let word5 = "ASYNC";
+let word6 = "ASYNC";
 
 // let word2 = "VALUE";
 // let word3 = "INPUT";

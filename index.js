@@ -69,7 +69,7 @@ const firstWord = (e) => {
         }
         // document.removeEventListener("keydown", pressedLetter);
         // next1++;
-        alert("yoyo");
+        alert("You Won!");
       }
     } else if (winWord[next1] !== squares[next1].innerHTML) {
       // console.log(winWord[next1]);
@@ -78,7 +78,7 @@ const firstWord = (e) => {
         for (let i = 0; i <= next1; i++) {
           squares[i].style.background = "red";
         }
-        alert("yo");
+        alert("Keep going");
         // next1++;
         // document.removeEventListener("keydown", pressedLetter);
       }
@@ -120,7 +120,7 @@ const secondWord = (e) => {
         }
         // document.removeEventListener("keydown", pressedLetter);
 
-        alert("yoyo");
+        alert("You Won!");
       }
     } else if (winWord[next2] !== squares[next2].innerHTML) {
       // console.log(winWord[next2], "hey");
@@ -133,7 +133,7 @@ const secondWord = (e) => {
           squares[i].style.background = "red";
           // console.log(squares[i]);
         }
-        alert("yo");
+        alert("Keep going");
       }
     }
   }
@@ -184,7 +184,7 @@ const thirdWord = (e) => {
         }
         // document.removeEventListener("keydown", pressedLetter);
 
-        alert("yoyo");
+        alert("You Won!");
       }
     } else if (winWord[next3] !== squares[next3].innerHTML) {
       console.log(winWord[next2], "hey");
@@ -197,7 +197,7 @@ const thirdWord = (e) => {
           squares[i].style.background = "red";
           console.log(squares[i]);
         }
-        alert("yo");
+        alert("Keep going");
       }
     }
   }
@@ -248,7 +248,7 @@ const fourthWord = (e) => {
         }
         // document.removeEventListener("keydown", pressedLetter);
 
-        alert("yoyo");
+        alert("You Won!");
       }
     } else if (winWord1[next4] !== squares[next4].innerHTML) {
       console.log(squares[next1].innerHTML, "hey2");
@@ -259,7 +259,7 @@ const fourthWord = (e) => {
           squares[i].style.background = "red";
           console.log(squares[i]);
         }
-        alert("yo");
+        alert("Keep going");
       }
     }
   }
@@ -310,7 +310,7 @@ const fifthWord = (e) => {
         }
         // document.removeEventListener("keydown", pressedLetter);
 
-        alert("yoyo");
+        alert("You Won!");
       }
     } else if (winWord1[next5] !== squares[next5].innerHTML) {
       console.log(squares[next1].innerHTML, "hey2");
@@ -321,7 +321,7 @@ const fifthWord = (e) => {
           squares[i].style.background = "red";
           console.log(squares[i]);
         }
-        alert("yo");
+        alert("Keep going");
       }
     }
   }
@@ -371,7 +371,7 @@ const lastWord = (e) => {
           squares[i].style.background = "green";
         }
 
-        alert("yoyo");
+        alert("You Won!");
       }
     } else if (winWord1[next6] !== squares[next6].innerHTML) {
       console.log(squares[next1].innerHTML, "hey2");
@@ -382,7 +382,7 @@ const lastWord = (e) => {
           squares[i].style.background = "red";
           console.log(squares[i]);
         }
-        alert("yo");
+        alert("Try again tommorow!");
       }
     }
   }
